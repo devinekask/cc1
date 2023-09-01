@@ -4,10 +4,9 @@ function setup() {
   frameRate(30);
 }
 
-function draw() 
-{
+function draw() {
   background(220);
   ellipse(mouseX, mouseY, 200, 200);
 
-  let i = 500
+  let i = 500;
 }
