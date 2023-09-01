@@ -2,4 +2,8 @@
 
 ## Github - Codesandbox bookmark
 
-```javascript:(window.open(document.location.href.replace('github.com','codesandbox.io/s/github')))```
+```js
+javascript: window.open(
+  document.location.href.replace("github.com", "codesandbox.io/s/github"),
+);
+```
