@@ -1,0 +1,69 @@
+{
+  "01-basic-drawing": {
+    "demos": [
+      {
+        "name": "color",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/color",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/color/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/color"
+      },
+      {
+        "name": "fill",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/fill",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/fill/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/fill"
+      },
+      {
+        "name": "frameloop",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/frameloop",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/frameloop/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/frameloop"
+      },
+      {
+        "name": "grid-system",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/grid-system",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/grid-system/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/grid-system"
+      },
+      {
+        "name": "hello-ellipse",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/hello-ellipse",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/hello-ellipse/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/hello-ellipse"
+      },
+      {
+        "name": "rotate",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/rotate",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/rotate/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/rotate"
+      },
+      {
+        "name": "stroke",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/stroke",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/stroke/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/stroke"
+      },
+      {
+        "name": "variable",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/variable",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/variable/js/script.js",
+        "relativePath": "./01-basic-drawing/demos/variable"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "01-shapes",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/01-shapes",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/01-shapes/js/script.js",
+        "relativePath": "./01-basic-drawing/exercises/01-shapes"
+      },
+      {
+        "name": "02-variables",
+        "sandbox": "https://codesandbox.io/s/github/devinekask/cc1/tree/main/01-basic-drawing/demos/02-variables",
+        "github": "https://github.com/devinekask/cc1/tree/main/01-basic-drawing/demos/02-variables/js/script.js",
+        "relativePath": "./01-basic-drawing/exercises/02-variables"
+      }
+    ]
+  },
+  "02-functions": {}
+}

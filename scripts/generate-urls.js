@@ -1,61 +1,71 @@
 import fs from "fs/promises";
 import path from "path";
 
-const base_url =
-  "https://codesandbox.io/s/github/devinekask/web1-examples/tree/main/";
+const codesandbox_base_url = "https://codesandbox.io/s/github/devinekask/cc1/tree/main/";
+const github_base_url = "https://github.com/devinekask/cc1";
 
-const generateUrls = async (directory) => {
-  try {
-    const urls = [];
-    await traverseFolders(directory, urls);
-    return urls;
-  } catch (error) {
-    console.error(`An error occurred: ${error}`);
-    throw error;
-  }
-};
+const getUrls = async () => {
+  // eslint-disable-next-line no-undef
+  const currentDir = process.cwd();
+  const urls = {};
 
-const traverseFolders = async (currentDir, urls) => {
   try {
     const files = await fs.readdir(currentDir);
 
     for (const file of files) {
-      if (file.startsWith(".") || file === "node_modules") {
+
+      if (!file.match("^[0-9]")) {
         continue;
       }
-      const fullPath = path.join(currentDir, file);
-      const stat = await fs.stat(fullPath);
 
-      if (stat.isDirectory()) {
-        const urlPath = path.relative(directory, fullPath).replace(/\\/g, "/");
-        const url = `${base_url}${urlPath}`;
-        urls.push(url);
-        console.log(`Generated URL: ${url}`);
-
-        await traverseFolders(fullPath, urls, url);
-      }
+      urls[file] = {};
+      await addUrls(urls, file, currentDir, "demos");
+      await addUrls(urls, file, currentDir, "exercises");
     }
+
+    return urls;
+
   } catch (error) {
-    console.error(`An error occurred while traversing folders: ${error}`);
+    console.error(`An error occurred while getting folders: ${error}`);
   }
 };
 
-// eslint-disable-next-line no-undef
-const directory = process.cwd();
+async function addUrls(urls, file, currentDir, folderName) {
 
-generateUrls(directory)
-  .then((generatedUrls) => {
-    const jsonContent = JSON.stringify(generatedUrls);
-    const jsonFileName = "urls.json";
+  const pathToFolder = path.join(currentDir, file, folderName);
 
-    fs.writeFile(jsonFileName, jsonContent)
-      .then(() => {
-        console.log(`URLs saved to ${jsonFileName}`);
-      })
-      .catch((error) => {
-        console.error(`An error occurred while writing JSON file: ${error}`);
-      });
-  })
-  .catch((error) => {
-    console.error(`An error occurred: ${error}`);
-  });
+  try {
+    const demoFolders = await fs.readdir(pathToFolder);
+
+    if (!demoFolders) return;
+
+    urls[file][folderName] = [];
+
+    for (const demoFolder of demoFolders) {
+      urls[file][folderName].push(
+        {
+          "name": demoFolder,
+          "sandbox": `${codesandbox_base_url}${file}/demos/${demoFolder}`,
+          "github": `${github_base_url}/tree/main/${file}/demos/${demoFolder}/js/script.js`,
+          "relativePath": `./${file}/${folderName}/${demoFolder}`
+        }
+      );
+    };
+  } catch (error) {
+    console.error(`An error occurred while getting folders: ${error}`);
+  }
+
+}
+
+const init = async () => {
+
+  const urls = await getUrls();
+  const jsonContent = JSON.stringify(urls);
+  const jsonFileName = "urls.json";
+
+  fs.writeFile(jsonFileName, jsonContent)
+    .then(() => console.log(`URLs saved to ${jsonFileName} `))
+    .catch((error) => console.error(`An error occurred while writing JSON file: ${error} `));
+};
+
+init();
