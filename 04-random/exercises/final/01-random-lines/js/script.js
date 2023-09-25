@@ -1,3 +1,5 @@
+let nLines = 0;
+
 function setup() {
   createCanvas(400, 400);
   background(0);
@@ -16,7 +18,9 @@ function draw() {
   noFill();
   rect(margin, margin, width - 2 * margin, height - 2 * margin);
 
-  if (frameCount >= 30) {
+  if (nLines === 30) {
     noLoop();
   }
+
+  nLines++;
 }
