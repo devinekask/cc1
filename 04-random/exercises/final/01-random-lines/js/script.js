@@ -7,6 +7,7 @@ function setup() {
 
 function draw() {
   const margin = 50;
+
   const x1 = constrain(random(400), margin, width - margin);
   const x2 = constrain(random(400), margin, width - margin);
   const y1 = constrain(random(400), margin, height - margin);

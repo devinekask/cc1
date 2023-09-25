@@ -7,7 +7,6 @@ let prevYPos;
 function setup() {
   createCanvas(400, 400);
   background(0);
-  stroke(255);
 }
 
 function draw() {
@@ -25,5 +24,6 @@ function draw() {
   xPos = constrain(xPos, 0, width);
   yPos = constrain(yPos, 0, height);
 
+  stroke(255);
   line(prevXPos, prevYPos, xPos, yPos);
 }

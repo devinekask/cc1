@@ -4,6 +4,7 @@ function setup() {
 }
 
 function draw() {
+
   if (mouseIsPressed) {
     const randomNumber = Math.floor(random(0, 5));
 
