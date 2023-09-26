@@ -6,10 +6,8 @@ function setup() {
 }
 
 function draw() {
-
   noFill();
   rect(50, 50, width - 2 * 50, height - 2 * 50);
-
 
   const x1 = constrain(random(400), 50, width - 50);
   const x2 = constrain(random(400), 50, width - 50);
