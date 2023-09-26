@@ -6,18 +6,18 @@ function setup() {
 }
 
 function draw() {
-  const margin = 50;
 
-  const x1 = constrain(random(400), margin, width - margin);
-  const x2 = constrain(random(400), margin, width - margin);
-  const y1 = constrain(random(400), margin, height - margin);
-  const y2 = constrain(random(400), margin, height - margin);
+  noFill();
+  rect(50, 50, width - 2 * 50, height - 2 * 50);
+
+
+  const x1 = constrain(random(400), 50, width - 50);
+  const x2 = constrain(random(400), 50, width - 50);
+  const y1 = constrain(random(400), 50, height - 50);
+  const y2 = constrain(random(400), 50, height - 50);
 
   stroke(255);
   line(x1, y1, x2, y2);
-
-  noFill();
-  rect(margin, margin, width - 2 * margin, height - 2 * margin);
 
   if (nLines === 30) {
     noLoop();
