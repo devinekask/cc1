@@ -19,6 +19,3 @@ function drawThreeCircles(circleSize) {
   ellipse(175, 300, circleSize, circleSize);
   ellipse(275, 300, circleSize, circleSize);
 }
-
-
-

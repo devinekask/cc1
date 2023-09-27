@@ -25,6 +25,3 @@ function drawThreeCircles() {
   ellipse(175, 300, 50, 50);
   ellipse(275, 300, 50, 50);
 }
-
-
-
