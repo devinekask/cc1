@@ -11,3 +11,7 @@ function draw() {
 function mouseClicked() {
   ellipse(mouseX, mouseY, 100, 100);
 }
+
+function keyPressed() {
+  console.log(keyCode);
+}
