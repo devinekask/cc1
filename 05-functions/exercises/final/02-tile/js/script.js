@@ -1,11 +1,10 @@
 function setup() {
   createCanvas(400, 400);
   background(0);
+  frameRate(1);
 }
 
-function draw() {}
-
-function mouseClicked() {
+function draw() {
   drawTiles();
 }
 

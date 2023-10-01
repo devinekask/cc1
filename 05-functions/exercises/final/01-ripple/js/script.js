@@ -8,7 +8,9 @@ function setup() {
 }
 
 function draw() {
+  background(0);
   drawRipple();
+  rippleSize += 20;
 }
 
 function mouseClicked() {
@@ -27,10 +29,7 @@ function drawRipple() {
   if (xPos !== undefined && yPos !== undefined) {
     noFill();
     stroke(255);
-    strokeWeight(2);
+    strokeWeight(5);
     ellipse(xPos, yPos, rippleSize);
   }
-
-  // Make ripple bigger
-  rippleSize += 20;
 }
