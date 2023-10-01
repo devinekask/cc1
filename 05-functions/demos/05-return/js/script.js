@@ -8,8 +8,6 @@ function draw() {
   drawDevineLogo(10, 60, 300);
 }
 
-
-
 function drawDevineLogo(xPos, yPos, size) {
   const randomColour = getRandomColour();
 
