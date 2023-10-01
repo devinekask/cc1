@@ -7,7 +7,7 @@ function draw() {
   drawThreeCircles(30);
 }
 
-function drawFourSquares(yPos) {
+function drawFourSquares(yPos = 200) {
   rect(50, yPos, 50, 50);
   rect(150, yPos, 50, 50);
   rect(250, yPos, 50, 50);

@@ -4,26 +4,18 @@ function setup() {
 }
 
 function draw() {
-  drawFace(100, 50);
-  drawFace(100, 150, true);
-  drawFace(100, 250);
-  drawFace(100, 350);
-
-  drawFace(200, 50);
-  drawFace(200, 150, true);
-  drawFace(200, 250);
-  drawFace(200, 350);
-
-  drawFace(300, 50);
-  drawFace(300, 150);
-  drawFace(300, 250);
-  drawFace(300, 350);
+  drawFace(50, 200);
+  drawFace(150, 200, true);
+  drawFace(250, 200);
+  drawFace(350, 200);
 
   //drawFace(mouseX, mouseY, true);
-  // drawFace(random(width),random(height))
+  //drawFace(random(width), random(height))
+
+  drawDevineLogo(10, 10, 50);
 }
 
-function drawFace(x, y, happy) {
+function drawFace(x, y, happy = false) {
   push();
   translate(x, y);
   fill("yellow");
@@ -52,7 +44,7 @@ function drawDevineLogo(xPos, yPos, size) {
   const rectSize = 0.8 * size;
   rect(0, 0, rectSize, rectSize);
   arc(rectSize, rectSize / 2, rectSize, rectSize, PI + HALF_PI, HALF_PI);
-  fill(255);
+  fill(220);
   arc(rectSize / 2, rectSize / 2, rectSize, rectSize, PI + HALF_PI, HALF_PI);
   pop();
 }

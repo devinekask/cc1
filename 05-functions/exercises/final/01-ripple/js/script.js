@@ -8,10 +8,10 @@ function setup() {
 }
 
 function draw() {
-  drawRipples();
+  drawRipple();
 }
 
-function mousePressed() {
+function mouseClicked() {
   // Clear background
   background(0);
 
@@ -23,7 +23,7 @@ function mousePressed() {
   rippleSize = 10;
 }
 
-function drawRipples() {
+function drawRipple() {
   if (xPos !== undefined && yPos !== undefined) {
     noFill();
     stroke(255);

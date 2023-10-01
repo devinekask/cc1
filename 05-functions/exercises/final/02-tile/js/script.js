@@ -1,9 +1,15 @@
 function setup() {
   createCanvas(400, 400);
-  frameRate(2);
+  background(0);
 }
 
-function draw() {
+function draw() {}
+
+function mouseClicked() {
+  drawTiles();
+}
+
+function drawTiles() {
   background(0);
 
   // 1 tile,
