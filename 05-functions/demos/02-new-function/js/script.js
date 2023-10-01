@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(400, 400);
-  sayHello();
+  noLoop();
 }
 
 function draw() {
@@ -10,7 +10,8 @@ function draw() {
 }
 
 function sayHello() {
-  console.log("Hello Devine");
+  const greeting = "Hello";
+  console.log(greeting);
 }
 
 function drawFourSquares() {
