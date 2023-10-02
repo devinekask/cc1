@@ -1,26 +1,26 @@
 function setup() {
   createCanvas(400, 400);
-  background(220);
+  background(0);
   noLoop();
 }
 
 function draw() {
-  const nRows = 50;
+  const nRows = 10;
   const nColumns = nRows;
   const cellHeight = height / nRows;
   const cellWidth = width / nColumns;
 
   for (let row = 0; row < nRows; row++) {
     for (let column = 0; column < nColumns; column++) {
-      const chance = random(0, 4);
+      push();
+      translate(column * cellWidth, row * cellHeight);
 
-      if (chance > 3) {
-        fill(0);
-      } else {
+      if (row === column) {
         fill(255);
+        ellipse(cellWidth / 2, cellHeight / 2, cellWidth, cellHeight);
       }
-      noStroke();
-      rect(column * cellWidth, row * cellHeight, cellWidth, cellHeight);
+
+      pop();
     }
   }
 }

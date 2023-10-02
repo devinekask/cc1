@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-  const nRectangles = 100;
+  const nRectangles = 10;
 
   for (let i = 0; i < nRectangles; i++) {
     const grayScale = (i / nRectangles) * 255;
