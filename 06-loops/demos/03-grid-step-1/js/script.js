@@ -6,10 +6,10 @@ function draw() {
   background(0);
   fill(255);
 
-  const nCells = 5;
-  const cellWidth = width / nCells;
+  const nCells = 8;
+  const cWidth = width / nCells;
 
   for (let column = 0; column < nCells; column++) {
-    ellipse(cellWidth / 2 + column * cellWidth, 25, cellWidth, 50);
+    ellipse(cWidth / 2 + column * cWidth, 25, cWidth, 50);
   }
 }

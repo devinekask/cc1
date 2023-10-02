@@ -6,18 +6,15 @@ function draw() {
   background(0);
   fill(255);
 
-  const nCells = 20;
-  const cellWidth = width / nCells;
-  const cellHeight = height / nCells;
+  const nCells = 8;
+  const cWidth = width / nCells;
+  const cHeight = height / nCells;
 
   for (let column = 0; column < nCells; column++) {
     for (let row = 0; row < nCells; row++) {
       push();
-      translate(
-        column * cellWidth + cellWidth / 2,
-        row * cellHeight + cellHeight / 2,
-      );
-      ellipse(0, 0, cellWidth, cellHeight);
+      translate(column * cWidth, row * cHeight);
+      ellipse(cWidth / 2, cHeight / 2, cWidth, cHeight);
       pop();
     }
   }
