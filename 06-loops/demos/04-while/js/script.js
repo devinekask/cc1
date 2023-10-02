@@ -9,7 +9,7 @@ function draw() {
   while (i < 5) {
     ellipse(25 + i * 50, 50, 50);
     i++;
-  };
+  }
 
   // As much ellipses as we can
   let x = 50;
