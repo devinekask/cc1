@@ -19,7 +19,12 @@ function drawGrid() {
       translate(column * cellWidth, row * cellHeight);
 
       // Don't draw first & last column/row
-      if (row !== 0 && row !== nRows - 1 && column !== 0 && column !== nColumns - 1) {
+      if (
+        row !== 0 &&
+        row !== nRows - 1 &&
+        column !== 0 &&
+        column !== nColumns - 1
+      ) {
         drawDevineLogo(0, 0, cellHeight - 10);
       }
       pop();
