@@ -1,4 +1,4 @@
-const nRectangles = 15;
+
 
 function setup() {
   createCanvas(400, 400);
@@ -6,10 +6,15 @@ function setup() {
 }
 
 function draw() {
+  const nRectangles = 100;
+
+
   for (let i = 0; i < nRectangles; i++) {
-    const grayScale = map(i, 0, 15, 0, 255);
+    const grayScale = i / nRectangles * 255;
     const wRect = width / nRectangles;
-    fill(grayScale);
+
+    noStroke();
+    fill(grayScale, 0, 0);
     rect(i * wRect, 0, wRect, height);
   }
 }
