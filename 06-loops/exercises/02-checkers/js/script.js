@@ -1,5 +1,3 @@
-
-
 function setup() {
   createCanvas(400, 400);
   background(220);
@@ -7,7 +5,6 @@ function setup() {
 }
 
 function draw() {
-
   const nRows = 50;
   const nColumns = nRows;
   const cellHeight = height / nRows;
@@ -15,7 +12,6 @@ function draw() {
 
   for (let row = 0; row < nRows; row++) {
     for (let column = 0; column < nColumns; column++) {
-
       const chance = random(0, 4);
 
       if (chance > 3) {
@@ -25,7 +21,6 @@ function draw() {
       }
       noStroke();
       rect(column * cellWidth, row * cellHeight, cellWidth, cellHeight);
-
     }
   }
 }

@@ -1,5 +1,3 @@
-
-
 function setup() {
   createCanvas(400, 400);
   background(0);
@@ -7,7 +5,6 @@ function setup() {
 }
 
 function draw() {
-
   const nRows = 10;
   const nColumns = nRows;
   const cellHeight = height / nRows;
@@ -15,12 +12,10 @@ function draw() {
 
   for (let row = 0; row < nRows; row++) {
     for (let column = 0; column < nColumns; column++) {
-
       drawTruchet(column * cellWidth, row * cellHeight, cellWidth);
     }
   }
 }
-
 
 function drawTruchet(xPos, yPos, tileSize) {
   stroke(255);

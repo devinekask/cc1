@@ -1,5 +1,3 @@
-
-
 function setup() {
   createCanvas(400, 400);
   background(220);
@@ -8,9 +6,8 @@ function setup() {
 function draw() {
   const nRectangles = 100;
 
-
   for (let i = 0; i < nRectangles; i++) {
-    const grayScale = i / nRectangles * 255;
+    const grayScale = (i / nRectangles) * 255;
     const wRect = width / nRectangles;
 
     noStroke();
