@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  const nRows = 10;
+  const nRows = 20;
   const nColumns = nRows;
   const cellHeight = height / nRows;
   const cellWidth = width / nColumns;
@@ -18,22 +18,22 @@ function draw() {
 }
 
 function drawTruchet(xPos, yPos, tileSize) {
+  push();
+  translate(xPos, yPos);
   stroke(255);
   strokeWeight(4);
   noFill();
-
-  // This is our available space
-  //rect(xPos, yPos, tileSize, tileSize);
 
   const tile = Math.floor(random(2));
 
   if (tile === 0) {
     // Version 1
-    arc(xPos, yPos, tileSize, tileSize, 0, HALF_PI);
-    arc(xPos + tileSize, yPos + tileSize, tileSize, tileSize, PI, PI + HALF_PI);
+    arc(0, 0, tileSize, tileSize, 0, HALF_PI);
+    arc(tileSize, tileSize, tileSize, tileSize, PI, PI + HALF_PI);
   } else if (tile === 1) {
     // Version 2
-    arc(xPos, yPos + tileSize, tileSize, tileSize, PI + HALF_PI, 0);
-    arc(xPos + tileSize, yPos, tileSize, tileSize, HALF_PI, PI);
+    arc(0, tileSize, tileSize, tileSize, PI + HALF_PI, 0);
+    arc(0 + tileSize, 0, tileSize, tileSize, HALF_PI, PI);
   }
+  pop();
 }
