@@ -39,7 +39,7 @@ function getCurrentScene() {
     reference = ms;
     return 1;
   }
-};
+}
 
 function showTime() {
   const ms = millis();

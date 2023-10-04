@@ -15,7 +15,6 @@ function draw() {
 
   for (let row = 0; row < nRows; row++) {
     for (let column = 0; column < nCols; column++) {
-
       const xPos = column * rectSize;
       const yPos = row * rectSize;
 

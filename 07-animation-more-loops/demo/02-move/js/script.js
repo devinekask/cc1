@@ -17,5 +17,4 @@ function drawBall() {
   translate(width / 2, height / 2);
   ellipse(0, 0, circleSize);
   pop();
-};
-
+}

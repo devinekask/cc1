@@ -19,4 +19,3 @@ const drawBall = () => {
   ellipse(0, 0, 50, 50);
   pop();
 };
-

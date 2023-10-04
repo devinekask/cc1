@@ -27,4 +27,4 @@ function drawCell(x, y) {
     }
   }
   pop();
-};
+}

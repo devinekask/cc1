@@ -19,5 +19,4 @@ function drawBall() {
   translate(i, height / 2);
   ellipse(0, 0, 50);
   pop();
-};
-
+}

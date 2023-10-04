@@ -20,5 +20,4 @@ function drawLine() {
   fill(255);
   line(0, -100, 0, 100);
   pop();
-};
-
+}
