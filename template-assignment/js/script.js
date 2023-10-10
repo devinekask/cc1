@@ -14,7 +14,6 @@ function preload() {
   song = loadSound("./assets/lets-dance.mp3");
 }
 
-
 function draw() {
   currentScene = getCurrentScene();
 
@@ -63,7 +62,6 @@ function showTime() {
   text(`Scene: ${currentScene}`, 10, 50);
   pop();
 }
-
 
 function mouseClicked() {
   song.play();
