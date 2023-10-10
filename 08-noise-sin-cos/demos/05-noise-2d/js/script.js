@@ -13,7 +13,6 @@ function draw() {
 
   for (let column = 0; column < nCells; column++) {
     for (let row = 0; row < nCells; row++) {
-
       push();
       translate(column * cWidth, row * cHeight);
       translate(cWidth / 2, cHeight / 2);

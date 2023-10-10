@@ -6,7 +6,6 @@ function draw() {
   background(255);
 
   for (let xPos = 0; xPos < width; xPos++) {
-
     // RANDOM
     //line(xPos, height, xPos, random(height));
 
