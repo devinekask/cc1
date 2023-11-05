@@ -1,7 +1,6 @@
 const circles = [];
 const radius = 10;
 
-
 function setup() {
   createCanvas(400, 400);
   createCircles(200);
@@ -29,4 +28,3 @@ function draw() {
     pop();
   }
 }
-

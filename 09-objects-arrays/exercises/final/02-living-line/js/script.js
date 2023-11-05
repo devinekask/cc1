@@ -6,7 +6,6 @@ function setup() {
   frameRate(30);
 }
 
-
 function draw() {
   background(0);
 

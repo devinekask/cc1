@@ -1,6 +1,5 @@
 const dots = [];
 
-
 function setup() {
   createCanvas(400, 400);
   background(0);
@@ -12,13 +11,11 @@ function generateRandomPattern() {
   for (let i = 0; i < 100; i++) {
     dots.push({
       x: random(20, width - 20),
-      y: random(20, height - 20)
+      y: random(20, height - 20),
     });
   }
 
   console.log(dots);
-
-
 }
 
 function draw() {
