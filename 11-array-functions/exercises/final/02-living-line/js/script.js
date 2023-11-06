@@ -9,19 +9,16 @@ function setup() {
 function draw() {
   background(0);
 
-  const newPoint = {
-    x: mouseX,
-    y: mouseY,
-  };
-
-  // Add new (last)
-  points.push(newPoint);
+  addPoint();
 
   if (points.length > nPoints) {
     points.shift();
   }
 
-  // Loop through points & draw lines
+  drawLine();
+}
+
+function drawLine() {
   noFill();
   beginShape();
   stroke(255);
@@ -30,4 +27,14 @@ function draw() {
     vertex(point.x, point.y);
   });
   endShape();
+}
+
+function addPoint() {
+  const newPoint = {
+    x: mouseX,
+    y: mouseY,
+  };
+
+  // Add new (last)
+  points.push(newPoint);
 }
