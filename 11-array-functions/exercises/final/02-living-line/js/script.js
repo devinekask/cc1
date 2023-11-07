@@ -1,9 +1,8 @@
-const nPoints = 25;
+const nPoints = 100;
 const points = [];
 
 function setup() {
   createCanvas(400, 400);
-  frameRate(30);
 }
 
 function draw() {
