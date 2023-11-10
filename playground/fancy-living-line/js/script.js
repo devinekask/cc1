@@ -17,7 +17,7 @@ function draw() {
   // New location
   const point = {
     x: mouseX,
-    y: mouseY
+    y: mouseY,
   };
   points.push(point); // Update the last spot in the array with the mouse location.
 
@@ -27,7 +27,7 @@ function draw() {
 
   // Draw everything
   for (let i = 0; i < points.length; i++) {
-    // Draw an ellipse for each element in the arrays. 
+    // Draw an ellipse for each element in the arrays.
     // Color and size are tied to the loop's counter: i.
     noStroke();
     fill(255 - i * 5);
