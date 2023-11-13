@@ -1,5 +1,4 @@
 class Ripple {
-
   constructor(x, y) {
     this.x = x;
     this.y = y;
@@ -16,5 +15,4 @@ class Ripple {
   update() {
     this.size++;
   }
-
 }

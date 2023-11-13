@@ -10,7 +10,6 @@ function draw() {
   background(220);
   drawRect();
   update();
-
 }
 
 function drawRect() {

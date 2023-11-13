@@ -4,13 +4,19 @@
     "es2021": true,
     "p5js/p5": true
   },
-  "extends": ["eslint:recommended", "plugin:p5js/p5", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:p5js/p5",
+    "prettier"
+  ],
   "overrides": [
     {
       "env": {
         "node": true
       },
-      "files": [".eslintrc.{js,cjs}"],
+      "files": [
+        ".eslintrc.{js,cjs}"
+      ],
       "parserOptions": {
         "sourceType": "script"
       }
@@ -21,11 +27,30 @@
     "sourceType": "module"
   },
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"],
-    "prefer-const": "error"
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "prefer-const": "error",
+    "no-undef": "off",
+    "no-unused-vars": "off"
   },
-  "plugins": ["p5js"]
+  "plugins": [
+    "p5js"
+  ]
 }

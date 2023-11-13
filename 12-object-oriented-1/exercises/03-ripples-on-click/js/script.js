@@ -1,4 +1,4 @@
-let ripples = [];;
+let ripples = [];
 
 function setup() {
   createCanvas(400, 400);
@@ -7,9 +7,9 @@ function setup() {
 function draw() {
   background(0);
 
-  ripples = ripples.filter(ripple => ripple.size < 250);
+  ripples = ripples.filter((ripple) => ripple.size < 250);
 
-  ripples.forEach(ripple => {
+  ripples.forEach((ripple) => {
     ripple.display();
     ripple.update();
   });

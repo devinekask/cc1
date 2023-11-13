@@ -1,5 +1,4 @@
 class Car {
-
   // The constructor is executed when a new instance (object) is created.
   // x and y are the initial position of the car.
   constructor(x, y) {
