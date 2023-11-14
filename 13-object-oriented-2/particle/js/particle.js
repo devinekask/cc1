@@ -30,7 +30,6 @@ class Particle {
     fill(255, 255, 255, opacity);
     ellipse(0, 0, this.size);
 
-
     pop();
   }
   run() {
@@ -38,5 +37,3 @@ class Particle {
     this.display();
   }
 }
-
-
