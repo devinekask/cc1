@@ -11,11 +11,9 @@ function draw() {
     particles.push(new Particle(mouseX, mouseY));
   }
 
-  // particles.push(new Particle(random(width), -10));
+  particles = particles.filter(particle => particle.isAlive());
 
-  particles = particles.filter((element) => element.isAlive());
-
-  particles.forEach((element) => {
+  particles.forEach(element => {
     element.display();
     element.update();
   });
