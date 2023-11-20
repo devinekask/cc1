@@ -1,6 +1,4 @@
-let positionX;
-let positionY;
-
+let position;
 let step;
 
 function setup() {
