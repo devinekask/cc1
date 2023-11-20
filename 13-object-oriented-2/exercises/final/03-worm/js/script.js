@@ -5,7 +5,7 @@ function setup() {
   background(0);
 
   for (let i = 0; i < 4; i++) {
-    const colour = SquareWorm.getRandomColour();
+    const colour = getRandomColour();
     const chance = random();
 
     if (chance < 0.5) {
@@ -19,7 +19,25 @@ function setup() {
 function draw() {
   worms.forEach((element) => element.run());
 
-  if (frameCount > 800) {
+  if (frameCount > 1000) {
     noLoop();
   }
+}
+
+function getRandomColour() {
+  let colour;
+
+  const chance = random();
+
+  if (chance < 0.25) {
+    colour = "#219C90";
+  } else if (chance < 0.5) {
+    colour = "#E9B824";
+  } else if (chance < 0.75) {
+    colour = "#EE9322";
+  } else {
+    colour = "#D83F31";
+  }
+
+  return colour;
 }

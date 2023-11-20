@@ -32,22 +32,4 @@ class Worm {
       this.location.y = 0;
     }
   }
-
-  static getRandomColour() {
-    let colour;
-
-    const chance = random();
-
-    if (chance < 0.25) {
-      colour = "#219C90";
-    } else if (chance < 0.5) {
-      colour = "#E9B824";
-    } else if (chance < 0.75) {
-      colour = "#EE9322";
-    } else {
-      colour = "#D83F31";
-    }
-
-    return colour;
-  }
 }
