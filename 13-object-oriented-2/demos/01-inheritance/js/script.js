@@ -1,11 +1,11 @@
 let circle;
-let square;
+let rectangle;
 
 function setup() {
   createCanvas(400, 400);
 
   circle = new Circle(200, 100, 100);
-  square = new Square(150, 200, 100);
+  rectangle = new Rectangle(150, 200, 100, 150);
 }
 
 function draw() {
@@ -14,6 +14,6 @@ function draw() {
   circle.display();
   circle.update();
 
-  square.display();
-  square.update();
+  rectangle.display();
+  rectangle.update();
 }
