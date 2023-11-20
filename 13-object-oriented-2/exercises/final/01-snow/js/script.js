@@ -12,7 +12,7 @@ function draw() {
   drawSnow();
 
   snowFlakes.forEach((element) => element.run());
-  snowFlakes = snowFlakes.filter((element) => element.isAlive);
+  snowFlakes = snowFlakes.filter((element) => element.isAlive());
 }
 
 function addNewFlakes() {
