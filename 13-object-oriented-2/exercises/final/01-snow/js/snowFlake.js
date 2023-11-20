@@ -1,8 +1,8 @@
 class SnowFlake {
   constructor() {
     this.location = createVector(random(width), random(-300));
-    this.velocity = createVector(0, random(-2, 2));
-    this.size = random(3);
+    this.velocity = createVector(0, random(0.1, 2));
+    this.size = random(1, 3);
   }
 
   run() {
