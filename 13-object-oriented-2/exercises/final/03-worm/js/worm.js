@@ -40,7 +40,7 @@ class Worm {
 
     if (chance < 0.25) {
       colour = "#219C90";
-    } else if (chance < 0.50) {
+    } else if (chance < 0.5) {
       colour = "#E9B824";
     } else if (chance < 0.75) {
       colour = "#EE9322";
@@ -50,5 +50,4 @@ class Worm {
 
     return colour;
   }
-
 }

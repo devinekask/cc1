@@ -8,7 +8,7 @@ function setup() {
     const colour = SquareWorm.getRandomColour();
     const chance = random();
 
-    if (chance < 0.25) {
+    if (chance < 0.5) {
       worms.push(new SquareWorm(random(width), random(height), 20, colour));
     } else {
       worms.push(new RoundWorm(random(width), random(height), 20, colour));
