@@ -10,13 +10,10 @@ function setup() {
 
 function draw() {
   background(0);
-  
+
   circle.display();
   circle.update();
 
   square.display();
   square.update();
 }
-
-
-
