@@ -1,8 +1,9 @@
 class Worm {
-  constructor(x, y, size) {
+  constructor(x, y, size, colour) {
     this.location = createVector(x, y);
     this.velocity = createVector(size / 4, size / 4);
     this.size = size;
+    this.colour = colour;
     this.noiseValue = random(100);
   }
 
@@ -14,7 +15,7 @@ class Worm {
   update() {
     angleMode(DEGREES);
 
-    const angle = map(noise(this.noiseValue), 0, 1, -45, 45);
+    const angle = map(noise(this.noiseValue), 0, 1, -30, 30);
 
     this.velocity.rotate(angle);
     this.location.add(this.velocity);
@@ -32,9 +33,22 @@ class Worm {
     }
   }
 
-  display() {
-    stroke(255);
-    fill(0);
-    ellipse(this.location.x, this.location.y, this.size);
+  static getRandomColour() {
+    let colour;
+
+    const chance = random();
+
+    if (chance < 0.25) {
+      colour = "#219C90";
+    } else if (chance < 0.50) {
+      colour = "#E9B824";
+    } else if (chance < 0.75) {
+      colour = "#EE9322";
+    } else {
+      colour = "#D83F31";
+    }
+
+    return colour;
   }
+
 }
