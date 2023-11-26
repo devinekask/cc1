@@ -1,19 +1,18 @@
 class Circle {
-  constructor(x, y, maxSize) {
+  constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.r = random(1, maxSize);
+    this.r = random(2, 150);
     this.isGrowing = true;
   }
 
   draw() {
     noFill();
     stroke(255);
-    strokeWeight(0.5);
     circle(this.x, this.y, this.r * 2);
 
     if (this.isGrowing) {
-      this.r += 0.5;
+      this.r += 1;
     }
   }
 
