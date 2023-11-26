@@ -28,9 +28,11 @@ function addCircle(amount) {
 }
 
 function doesCircleOverlap(newCircle) {
-  return circles.some((existingCircle) => newCircle !== existingCircle && newCircle.overlaps(existingCircle));
+  return circles.some(
+    (existingCircle) =>
+      newCircle !== existingCircle && newCircle.overlaps(existingCircle),
+  );
 }
-
 
 function stopExistingCircles() {
   circles.forEach((circleOne, indexOne) => {
