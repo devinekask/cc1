@@ -19,7 +19,7 @@ function draw() {
 function createCirlces() {
   for (let i = 0; i < 50; i++) {
     bubbles.push(
-      new Bubble(random(width), random(height), "white", random(30))
+      new Bubble(random(width), random(height), "white", random(30)),
     );
   }
 }
