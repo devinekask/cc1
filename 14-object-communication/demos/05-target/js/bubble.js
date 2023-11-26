@@ -1,5 +1,4 @@
 class Bubble {
-
   constructor(x, y, colour = "white", r = 30) {
     this.location = createVector(x, y);
     this.velocity = createVector(random(-2, 2), random(-2, 2));
@@ -30,7 +29,6 @@ class Bubble {
   }
 
   move() {
-
     if (this.target !== undefined) {
       this.moveToTarget();
       return;

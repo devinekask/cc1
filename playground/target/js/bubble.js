@@ -8,7 +8,6 @@ class Bubble {
     this.colour = colour;
     this.percentage = random(0.4, 0.1);
     this.r = r;
-
   }
 
   isAlive() {

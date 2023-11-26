@@ -10,7 +10,7 @@ function draw() {
   background(0);
   noStroke();
 
-  bubbles.forEach(bubble => {
+  bubbles.forEach((bubble) => {
     bubble.show();
     if (chaos) {
       bubble.move();
@@ -25,12 +25,11 @@ function mouseClicked() {
 }
 
 function createCircles() {
-  const nCircles = 150;;
+  const nCircles = 150;
 
   for (let i = 0; i < nCircles; i++) {
-
     const newBubble = new Bubble(random(width), random(height), "white", 5);
-    const x = i / nCircles * width;
+    const x = (i / nCircles) * width;
     const y = height / 2;
 
     newBubble.target = createVector(x, y);

@@ -12,7 +12,6 @@ function draw() {
   background(220);
 
   if (bubble1.intersects(bubble2)) {
-
     if (!bubble1.overlap && !bubble2.overlap) {
       bubble1.colour = getRandomColour();
       bubble2.colour = getRandomColour();
@@ -20,7 +19,6 @@ function draw() {
 
     bubble1.overlap = true;
     bubble2.overlap = true;
-
   } else {
     bubble1.overlap = false;
     bubble2.overlap = false;
@@ -34,7 +32,13 @@ function draw() {
 }
 
 function getRandomColour() {
-  const colours = ["#2B2A4C", "#B31312", "#EA906C", "#EEE2DE", "#6B240C", "#6B240C"];
+  const colours = [
+    "#2B2A4C",
+    "#B31312",
+    "#EA906C",
+    "#EEE2DE",
+    "#6B240C",
+    "#6B240C",
+  ];
   return random(colours);
 }
-

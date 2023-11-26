@@ -15,7 +15,10 @@ function setup() {
   for (let i = 0; i < N_COLS; i++) {
     for (let j = 0; j < N_COLS; j++) {
       counter++;
-      const newBubble = new Bubble(random(-width / 2, 1.5 * width), random(-height / 2, 1.5 * height));
+      const newBubble = new Bubble(
+        random(-width / 2, 1.5 * width),
+        random(-height / 2, 1.5 * height),
+      );
 
       let xPos;
       let yPos;
@@ -54,7 +57,6 @@ function setup() {
       yPos = map(j, 0, N_ROWS, 50, height - 50);
       newBubble.formations.push(createVector(xPos, yPos));
 
-
       // Circle formation
       xPos = width / 2 + cos(angle) * 0;
       yPos = height / 2 + sin(angle) * 0;
@@ -67,13 +69,12 @@ function setup() {
       bubbles.push(newBubble);
     }
   }
-
 }
 
 function draw() {
   background(255, 200);
 
-  bubbles.forEach(bubble => {
+  bubbles.forEach((bubble) => {
     bubble.show();
     bubble.target = bubble.formations[currentFormation];
     bubble.moveToTarget();
@@ -107,4 +108,3 @@ function setFormation() {
 function mouseClicked() {
   noLoop();
 }
-

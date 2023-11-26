@@ -21,6 +21,10 @@ function draw() {
   bubble1.show();
   bubble2.show();
 
-  line(bubble1.location.x, bubble1.location.y, bubble2.location.x, bubble2.location.y);
+  line(
+    bubble1.location.x,
+    bubble1.location.y,
+    bubble2.location.x,
+    bubble2.location.y,
+  );
 }
-
