@@ -27,7 +27,6 @@ function mouseClicked() {
   });
 }
 
-
 function createCircles() {
   const nCircles = 150;
 
