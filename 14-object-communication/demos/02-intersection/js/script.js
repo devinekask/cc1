@@ -11,6 +11,8 @@ function setup() {
 function draw() {
   background(220);
 
+  // Check if the bubbles are overlapping
+  // If they are, change the background color to red
   if (bubble1.intersects(bubble2)) {
     background("red");
   }

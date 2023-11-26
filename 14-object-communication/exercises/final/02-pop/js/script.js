@@ -2,12 +2,7 @@ let bubbles = [];
 
 function setup() {
   createCanvas(400, 400);
-
-  for (let i = 0; i < 50; i++) {
-    bubbles.push(
-      new Bubble(random(width), random(height), "white", random(30)),
-    );
-  }
+  createCirlces();
 }
 
 function draw() {
@@ -19,6 +14,14 @@ function draw() {
     bubble.show();
     bubble.move();
   });
+}
+
+function createCirlces() {
+  for (let i = 0; i < 50; i++) {
+    bubbles.push(
+      new Bubble(random(width), random(height), "white", random(30))
+    );
+  }
 }
 
 function mouseClicked() {

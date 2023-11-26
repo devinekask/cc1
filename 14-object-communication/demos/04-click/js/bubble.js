@@ -21,6 +21,7 @@ class Bubble {
     }
   }
 
+  // This method is used to check if the mouse is inside the bubble.
   contains(x, y) {
     const distance = dist(this.location.x, this.location.y, x, y);
 

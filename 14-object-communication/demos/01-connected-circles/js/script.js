@@ -17,6 +17,10 @@ function draw() {
   bubble1.show();
   bubble2.show();
 
+  // Draw a line between the two bubbles
+  // This line represents the distance between the two bubbles
+  // We will use this distance to check if the bubbles are overlapping
+
   line(
     bubble1.location.x,
     bubble1.location.y,

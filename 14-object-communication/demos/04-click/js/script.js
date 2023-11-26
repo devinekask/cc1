@@ -13,6 +13,7 @@ function draw() {
   bubble.move();
 }
 
+// If mouseX and mouseY are inside the bubble, stop the animation
 function mouseClicked() {
   if (bubble.contains(mouseX, mouseY)) {
     // bubble.r+= 2;

@@ -2,17 +2,11 @@ class Bubble {
   constructor(x, y, colour = "white", r = 30) {
     this.location = createVector(x, y);
     this.velocity = createVector(random(-2, 2), random(-2, 2));
-    this.target = undefined;
     this.colour = colour;
     this.r = r;
   }
 
   move() {
-    if (this.target !== undefined) {
-      this.moveToTarget();
-      return;
-    }
-
     this.location.add(this.velocity);
 
     const reflection = createVector(0, 0);
@@ -25,11 +19,6 @@ class Bubble {
     }
 
     this.velocity.reflect(reflection);
-  }
-
-  moveToTarget() {
-    this.location.x = lerp(this.location.x, this.target.x, 0.1);
-    this.location.y = lerp(this.location.y, this.target.y, 0.1);
   }
 
   show() {
