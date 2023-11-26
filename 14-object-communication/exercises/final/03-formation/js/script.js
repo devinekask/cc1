@@ -1,5 +1,4 @@
 const bubbles = [];
-let chaos = true;
 
 function setup() {
   createCanvas(400, 400);
@@ -12,28 +11,28 @@ function draw() {
 
   bubbles.forEach((bubble) => {
     bubble.show();
-    if (chaos) {
-      bubble.move();
-    } else {
-      bubble.moveToTarget();
-    }
+    bubble.move();
   });
 }
 
 function mouseClicked() {
-  chaos = !chaos;
+  bubbles.forEach((bubble, i) => {
+    if (bubble.target === undefined) {
+      const x = (i / bubbles.length) * width;
+      const y = height / 2;
+      bubble.target = createVector(x, y);
+    } else {
+      bubble.target = undefined;
+    }
+  });
 }
+
 
 function createCircles() {
   const nCircles = 150;
 
   for (let i = 0; i < nCircles; i++) {
     const newBubble = new Bubble(random(width), random(height), "white", 5);
-    const x = (i / nCircles) * width;
-    const y = height / 2;
-
-    newBubble.target = createVector(x, y);
-
     bubbles.push(newBubble);
   }
 }
