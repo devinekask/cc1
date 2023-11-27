@@ -21,11 +21,12 @@ class Bubble {
     this.velocity.reflect(reflection);
   }
 
-  /*
-  When the distance between the bubble and the other bubble is
-  less than the sum of their radius, then they are intersecting.
-  */
+
+  // When the distance between the bubble and the other bubble is
+  // less than the sum of their radius, then they are intersecting.
+
   intersects(other) {
+    // Long version:
     // const distance = dist(
     //   this.location.x,
     //   this.location.y,
@@ -33,6 +34,7 @@ class Bubble {
     //   other.location.y,
     // );
 
+    // Short version, using the p5.Vector.dist() method:
     const distance = this.location.dist(other.location);
 
     if (distance < this.r + other.r) {
