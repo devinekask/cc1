@@ -21,7 +21,6 @@ class Bubble {
     this.velocity.reflect(reflection);
   }
 
-
   // When the distance between the bubble and the other bubble is
   // less than the sum of their radius, then they are intersecting.
 

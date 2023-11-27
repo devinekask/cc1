@@ -23,7 +23,6 @@ function draw() {
 
 function checkIntersection() {
   if (bubble1.intersects(bubble2)) {
-
     // Only change the colour if the bubbles are not already overlapping
     if (!bubble1.overlap && !bubble2.overlap) {
       bubble1.overlap = true;
