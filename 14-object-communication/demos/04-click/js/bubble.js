@@ -7,12 +7,7 @@ class Bubble {
   }
 
   intersects(other) {
-    const distance = dist(
-      this.location.x,
-      this.location.y,
-      other.location.x,
-      other.location.y,
-    );
+    const distance = this.location.dist(other.location);
 
     if (distance < this.r + other.r) {
       return true;
