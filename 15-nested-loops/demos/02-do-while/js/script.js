@@ -11,5 +11,4 @@ function draw() {
     ellipse(25 + i * 50, 100, 50);
     i++;
   } while (i < 5);
-
 }
