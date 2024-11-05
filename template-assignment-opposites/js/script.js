@@ -8,21 +8,13 @@ function draw() {
 }
 
 // Use the functions below to display the four different scenes
-function displayChoas() {
+function displayChoas() {}
 
-}
+function displayOrder() {}
 
-function displayOrder() {
+function displayDark() {}
 
-}
-
-function displayDark() {
-
-}
-
-function displayLight() {
-
-}
+function displayLight() {}
 
 // DO NOT MODIFY THE CODE BELOW
 function handleKeyPress() {
@@ -39,4 +31,3 @@ function handleKeyPress() {
   }
 }
 // DO NOT MODIFY THE CODE ABOVE
-
