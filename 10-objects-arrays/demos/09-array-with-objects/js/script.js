@@ -3,7 +3,7 @@ const circles = [
     x: 50,
     y: 200,
     colour: "#2B3499",
-    size: 50,
+    size: 25,
   },
   {
     x: 150,
@@ -15,13 +15,13 @@ const circles = [
     x: 250,
     y: 200,
     colour: "#FF9209",
-    size: 50,
+    size: 25,
   },
   {
     x: 350,
     y: 200,
     colour: "#FFD099",
-    size: 50,
+    size: 100,
   },
 ];
 

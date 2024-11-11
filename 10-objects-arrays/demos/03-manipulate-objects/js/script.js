@@ -5,7 +5,8 @@ const circle = {
   size: 100,
 };
 
-// Another circle does not have a size property
+// Another circle
+// does not have a size property
 const anotherCircle = {
   x: 400,
   y: 200,
@@ -23,10 +24,10 @@ function draw() {
   fill(circle.colour);
   ellipse(circle.x, circle.y, circle.size);
 
-  // Create new size property
+  // Create new size property on otherCircle
   anotherCircle.size = 125;
 
-  // Another circle
+  // draw anotherCircle
   fill(anotherCircle.colour);
   ellipse(anotherCircle.x, anotherCircle.y, anotherCircle.size);
 
