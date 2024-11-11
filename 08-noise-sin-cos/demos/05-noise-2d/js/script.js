@@ -7,7 +7,7 @@ function draw() {
   background(0);
   fill(255);
 
-  const nCells = 50;
+  const nCells = 100;
   const cWidth = width / nCells;
   const cHeight = height / nCells;
 
