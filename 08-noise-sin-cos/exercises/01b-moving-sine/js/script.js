@@ -16,7 +16,7 @@ function draw() {
     strokeWeight(3);
     stroke(255);
 
-    const xPos = i / numberOfLines * width;
+    const xPos = (i / numberOfLines) * width;
     const yPos = height / 2;
 
     // add an extra angle to make it move

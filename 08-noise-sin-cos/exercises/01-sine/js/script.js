@@ -1,4 +1,3 @@
-
 function setup() {
   createCanvas(800, 400);
   angleMode(DEGREES);
@@ -15,7 +14,7 @@ function draw() {
     strokeWeight(3);
     stroke(255);
 
-    const xPos = i / numberOfLines * width;
+    const xPos = (i / numberOfLines) * width;
     const yPos = height / 2;
     const ySin = sin(i) * 100;
 
