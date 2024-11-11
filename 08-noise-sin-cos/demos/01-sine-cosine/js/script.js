@@ -11,13 +11,11 @@ function setup() {
 function draw() {
   background(0);
 
-  console.log(cos(angle));
+  const sinY = 200 + (sin(angle) * 100);
 
-  // const cosY = 200 + cos(angle) * 100;
-  const sinY = 200 + sin(angle) * 100;
+  //const cosY = 200 + cos(angle) * 100;
 
-  // ellipse(200, cosY, 30, 30);
-  ellipse(200, sinY, 30, 30);
+  ellipse(200, sinY, 100);
 
   angle += 1;
 }
