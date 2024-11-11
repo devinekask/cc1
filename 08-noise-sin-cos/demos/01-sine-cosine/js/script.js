@@ -11,7 +11,7 @@ function setup() {
 function draw() {
   background(0);
 
-  const sinY = 200 + (sin(angle) * 100);
+  const sinY = 200 + sin(angle) * 100;
 
   //const cosY = 200 + cos(angle) * 100;
 

@@ -33,7 +33,6 @@ function draw() {
   fill(64);
   arc(circleX, circleY, circleRadius / 2, circleRadius / 2, 360 - angle, 0);
 
-
   // Draw circle and diameters
   noFill();
   stroke(128);
@@ -70,7 +69,7 @@ function draw() {
     graphX + graphPeriod,
     graphY - graphAmplitude,
     graphX + graphPeriod,
-    graphY + graphAmplitude
+    graphY + graphAmplitude,
   );
 
   fill("grey");
