@@ -47,7 +47,6 @@ function updateCircles(coordinate, value) {
 
 function createCircles(n) {
   for (let i = 0; i < n; i++) {
-
     const newCircle = {
       x: random(width),
       y: random(height),
