@@ -8,7 +8,10 @@ function setup() {
 
 function draw() {
   background(0);
+  drawCircles();
+}
 
+function drawCircles() {
   circles.forEach((element) => {
     circle(element.x, element.y, diameter);
   });
@@ -44,6 +47,7 @@ function updateCircles(coordinate, value) {
 
 function createCircles(n) {
   for (let i = 0; i < n; i++) {
+
     const newCircle = {
       x: random(width),
       y: random(height),

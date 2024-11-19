@@ -1,4 +1,4 @@
-const nPoints = 100;
+const numberOfPoints = 100;
 const points = [];
 
 function setup() {
@@ -7,14 +7,25 @@ function setup() {
 
 function draw() {
   background(0);
-
   addPoint();
+  removeLastPoint();
+  drawLine();
+}
 
-  if (points.length > nPoints) {
+function addPoint() {
+  const newPoint = {
+    x: mouseX,
+    y: mouseY,
+  };
+
+  // new point(last)
+  points.push(newPoint);
+}
+
+function removeLastPoint() {
+  if (points.length > numberOfPoints) {
     points.shift();
   }
-
-  drawLine();
 }
 
 function drawLine() {
@@ -26,14 +37,4 @@ function drawLine() {
     vertex(point.x, point.y);
   });
   endShape();
-}
-
-function addPoint() {
-  const newPoint = {
-    x: mouseX,
-    y: mouseY,
-  };
-
-  // Add new (last)
-  points.push(newPoint);
 }
